@@ -1,0 +1,3 @@
+rootProject.name = 'RN_E2E_Test_With_Detox'
+
+include ':app'
