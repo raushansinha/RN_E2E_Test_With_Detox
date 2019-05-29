@@ -1,8 +1,8 @@
-#Create react-native application with typescript
+# Create react-native application with typescript
 
 react-native init <project_name> --template typescript
 
-#Adding TypeScript
+# Adding TypeScript
 
 npm i --save-dev typescript
 npm i --save-dev react-native-typescript-transformer
@@ -10,14 +10,14 @@ npm i tsc --init --pretty --jsx react
 cretae rn-cli.config.js
 npm i --save-dev  @types/react @types/react-native
 
-#The tsconfig.json file contains all the settings for the TypeScript compiler. The defaults created by the command above are mostly fine, but open the file and uncomment the following line:
+# The tsconfig.json file contains all the settings for the TypeScript compiler. The defaults created by the command above are mostly fine, but open the file and uncomment the following line:
 
 {
   /* Search the config file for the following line and uncomment it. */
   // "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
 }
 
-#The rn-cli.config.js contains the settings for the React Native TypeScript Transformer. Open it and add the following:
+# The rn-cli.config.js contains the settings for the React Native TypeScript Transformer. Open it and add the following:
 
 module.exports = {
   getTransformModulePath() {
@@ -28,7 +28,7 @@ module.exports = {
   },
 };
 
-#Migrating to TypeScript
+# Migrating to TypeScript
 
 App.tsx and modify the import at the top of the file:
 
@@ -37,11 +37,11 @@ App.tsx and modify the import at the top of the file:
 +import { Component } from 'react';
 
 
-#Adding TypeScript Testing Infrastructure
+# Adding TypeScript Testing Infrastructure
 
  npm i --save-dev ts-jest
 
-#Then, we'll open up our package.json and replace the jest field with the following:
+# Then, we'll open up our package.json and replace the jest field with the following:
 
 {
   "jest": {
@@ -64,7 +64,7 @@ App.tsx and modify the import at the top of the file:
   }
 }
 
-#Installing Dependency Type Declarations
+# Installing Dependency Type Declarations
 
 npm i --save-dev @types/jest @types/react @types/react-native @types/react-test-renderer
 
