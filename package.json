@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-native": "0.59.8",
     "tsc": "^1.20150623.0"
@@ -18,11 +19,14 @@
     "@types/react": "^16.8.19",
     "@types/react-native": "^0.57.60",
     "@types/react-test-renderer": "^16.8.1",
-    "babel-jest": "24.8.0",
-    "jest": "24.8.0",
+    "babel-jest": "^24.8.0",
+    "babel-preset-react-native": "^4.0.1",
+    "jest": "^24.8.0",
+    "jest-react-native": "^18.0.0",
     "metro-react-native-babel-preset": "0.54.1",
+    "react-addons-test-utils": "^15.6.2",
     "react-native-typescript-transformer": "^1.2.12",
-    "react-test-renderer": "16.8.3",
+    "react-test-renderer": "^16.8.3",
     "ts-jest": "^24.0.2",
     "typescript": "^3.4.5"
   },
